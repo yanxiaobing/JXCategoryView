@@ -9,13 +9,13 @@
 Pod::Spec.new do |s|
 
   s.name         = "JXCategoryView"
-  s.version = "1.6.1"
-  s.summary      = "A powerful and easy to use category view (segment view, segment control, page view, scroll viewcontroller) "
-  s.homepage     = "https://github.com/pujiaxin33/JXCategoryView"
+  s.version      = "10.0.0"
+  s.summary      = "暴露JXCategoryListContainerViewController"
+  s.homepage     = "https://github.com/yanxiaobing"
   s.license      = "MIT"
-  s.author             = { "pujiaxin33" => "317437084@qq.com" }
+  s.author       = { "XBingo" => "dove025@qq.com" }
   s.platform     = :ios, "9.0"
-  s.source       = { :git => "https://github.com/pujiaxin33/JXCategoryView.git", :tag => "#{s.version}" }
+  s.source       = { :git => "https://github.com/yanxiaobing/JXCategoryView.git", :tag => "#{s.version}" }
   s.source_files  = "Sources", "Sources/**/*.{h,m}"
   s.requires_arc = true
   
