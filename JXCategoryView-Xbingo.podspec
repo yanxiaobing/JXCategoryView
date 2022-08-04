@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "JXCategoryView-Xbingo"
-  s.version      = "10.0.0"
+  s.version      = "10.0.1"
   s.summary      = "暴露JXCategoryListContainerViewController"
   s.homepage     = "https://github.com/yanxiaobing"
   s.license      = "MIT"
