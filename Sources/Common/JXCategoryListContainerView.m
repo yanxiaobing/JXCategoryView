@@ -10,13 +10,6 @@
 #import <objc/runtime.h>
 #import "RTLManager.h"
 
-@interface JXCategoryListContainerViewController : UIViewController
-@property (copy) void(^viewWillAppearBlock)(void);
-@property (copy) void(^viewDidAppearBlock)(void);
-@property (copy) void(^viewWillDisappearBlock)(void);
-@property (copy) void(^viewDidDisappearBlock)(void);
-@end
-
 @implementation JXCategoryListContainerViewController
 - (void)dealloc
 {
@@ -52,7 +45,6 @@
 @property (nonatomic, assign) NSInteger willAppearIndex;
 @property (nonatomic, assign) NSInteger willDisappearIndex;
 @property (nonatomic, strong) UICollectionView *collectionView;
-@property (nonatomic, strong) JXCategoryListContainerViewController *containerVC;
 @end
 
 @implementation JXCategoryListContainerView

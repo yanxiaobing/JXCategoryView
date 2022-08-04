@@ -100,9 +100,15 @@ typedef NS_ENUM(NSUInteger, JXCategoryListContainerType) {
 
 @end
 
+@interface JXCategoryListContainerViewController : UIViewController
+@property (copy) void(^viewWillAppearBlock)(void);
+@property (copy) void(^viewDidAppearBlock)(void);
+@property (copy) void(^viewWillDisappearBlock)(void);
+@property (copy) void(^viewDidDisappearBlock)(void);
+@end
 
 @interface JXCategoryListContainerView : UIView <JXCategoryViewListContainer>
-
+@property (nonatomic, strong) JXCategoryListContainerViewController *containerVC;
 @property (nonatomic, assign, readonly) JXCategoryListContainerType containerType;
 @property (nonatomic, strong, readonly) UIScrollView *scrollView;
 @property (nonatomic, strong, readonly) NSDictionary <NSNumber *, id<JXCategoryListContentViewDelegate>> *validListDict;   //已经加载过的列表字典。key是index，value是对应的列表
